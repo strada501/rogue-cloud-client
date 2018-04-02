@@ -3,7 +3,7 @@ MAINTAINER IBM Java engineering at IBM Cloud
 ENV UPDATED_ON 2016-04-29
 COPY /target/liberty/wlp/usr/servers/defaultServer /config/
 COPY /target/liberty/wlp/usr/shared/resources /config/resources/
-COPY /src/main/liberty/config /config/
+#COPY /src/main/liberty/config /config/
 RUN installUtility install --acceptLicense defaultServer
 # Upgrade to production license if URL to JAR provided
 ARG LICENSE_JAR_URL
