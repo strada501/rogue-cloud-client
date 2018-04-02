@@ -1,5 +1,6 @@
 FROM websphere-liberty:webProfile7
 MAINTAINER IBM Java engineering at IBM Cloud
+ENV UPDATED_ON "14:12 17 February 2015"
 COPY /target/liberty/wlp/usr/servers/defaultServer /config/
 COPY /target/liberty/wlp/usr/shared/resources /config/resources/
 COPY /src/main/liberty/config/jvmbx.options /config/jvm.options
