@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('MicroserviceBuilderStrada') _
+@Library('MicroserviceBuilder') _
 microserviceBuilderPipeline {
   image = 'gameclient'
 }
